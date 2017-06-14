@@ -1,18 +1,16 @@
 {
   "name": "Floc",
-  "description": "Расширение поможет вам протестировать верстку на наличие дефектов, связанных с длинными словами и фразами.",
-  "version": "1.0",
-  "background": {
-    "scripts": ["background.js"]
-  },
+  "description": "Расширение поможет протестировать верстку на наличие дефектов, связанных с длинными словами, фразами и большими изображениями.",
+  "version": "1.1",
   "permissions": [
     "tabs",
     "http://*/*",
     "https://*/*"
   ],
   "browser_action": {
-    "default_title": "Проверить верстку",
-    "default_icon": "icon.png"
+    "default_title": "Floccinaucinihilipilificatiate!",
+    "default_icon": "icon.png",
+    "default_popup": "popup.html"
   },
   "icons": {
     "16": "icon.png",
