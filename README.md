@@ -1,6 +1,6 @@
 # Floc
 
-![floc-logo](http://take.ms/lfk3o)
+![floc-logo](http://take.ms/8BUdlp)
 
 Это расширение для Google Chrome поможет вам протестировать верстку на наличие дефектов, связанных с длинными словами и фразами.
 
