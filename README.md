@@ -1,6 +1,6 @@
 # Floc
 
-![floc-logo](https://image.ibb.co/hwf3xk/icon.png)
+![floc-logo](https://github.com/nikbelikov/floc/blob/master/floc/icon.png)
 
 Расширение поможет протестировать верстку на наличие дефектов, связанных с длинными словами, фразами и большими изображениями.
 
