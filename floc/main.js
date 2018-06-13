@@ -42,7 +42,8 @@ function addLargeImages(w, h) {
         "javascript:" +
         "var img=document.getElementsByTagName('img');" +
         "for(var i=0; i<img.length;i++) {" +
-            "img[i].src=\"https://via.placeholder.com/"+w+"x"+h+"\""+
+            "img[i].src=\"https://via.placeholder.com/"+w+"x"+h+"\";"+
+            "img[i].removeAttribute('srcset')" +
         "}";
 
     chrome.tabs.executeScript(null,
