@@ -1,16 +1,22 @@
 <!DOCTYPE html>
 <html>
-  <head>
+<head>
     <meta charset="utf-8">
     <title>Floc</title>
     <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
-    <section>
-      <h1>Проверить верстку на прочность:</h1>
-      <button id="add_long_text">Тексты</button>
-      <button id="add_large_images">Изображения</button>
-    </section>
-    <script src="main.js"></script>
-  </body>
+</head>
+<body>
+<section>
+    <h1>Проверить верстку на прочность:</h1>
+    <label for="add_long_text_count">Количество символов <br>(0 - автоматический подбор)</label>
+    <input id="add_long_text_count" type="number" min="0" value="0">
+    <button id="add_long_text">Тексты</button>
+    <label for="add_long_images_size_w">Ширина</label>
+    <input id="add_long_images_size_w" type="number" min="1" value="300">
+    <label for="add_long_images_size_h">Высота</label>
+    <input id="add_long_images_size_h" type="number" min="1" value="170">
+    <button id="add_large_images">Изображения</button>
+</section>
+<script src="main.js"></script>
+</body>
 </html>
