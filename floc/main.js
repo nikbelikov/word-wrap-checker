@@ -11,14 +11,11 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 function addLongText(n) {
-    var text = 'The longest non-technical word in major dictionaries is floccinaucinihilipilification at 29 letters.';
-    n = parseInt(n);
-    if (n !== 0) {
-        for (var i = 0; i < n / 100; i++) {
-            text = text + 'The longest non-technical word in major dictionaries is floccinaucinihilipilification at 29 letters.';
-        }
-        text = text.substr(0, n);
+    var text = '';
+    for (var i = 0; i < n / 100 + 1; i++) {
+        text = text + 'The longest non-technical word in major dictionaries is floccinaucinihilipilification at 29 letters.';
     }
+    text = text.substr(0, n);
     var code = "" +
         "javascript:" +
         "var a,w=document.createTreeWalker(document,NodeFilter.SHOW_TEXT);" +
