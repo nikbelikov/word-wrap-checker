@@ -8,13 +8,13 @@
 <body>
 <section>
     <h1>Проверить верстку на прочность:</h1>
-    <label for="add_long_text_count">Количество символов <br>(0 - автоматический подбор)</label>
-    <input id="add_long_text_count" type="number" min="1" value="100">
+    <label for="add_long_text_count">Количество символов: <span id="add_long_text_length">100</span></label>
+    <input id="add_long_text_count" type="range" min="1" max="1000" value="100"/>
     <button id="add_long_text">Тексты</button>
     <label for="add_long_images_size_w">Ширина</label>
-    <input id="add_long_images_size_w" type="number" min="1" value="300">
+    <input id="add_long_images_size_w" type="number" min="1" max="2500" value="1024">
     <label for="add_long_images_size_h">Высота</label>
-    <input id="add_long_images_size_h" type="number" min="1" value="170">
+    <input id="add_long_images_size_h" type="number" min="1" max="2500" value="768">
     <button id="add_large_images">Изображения</button>
 </section>
 <script src="main.js"></script>
