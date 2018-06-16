@@ -1,42 +1,57 @@
 html {
-    width: 200px;
-    text-align: center;
+  width: 200px;
+  text-align: center;
 }
 
 h1 {
-    font-size: 14px;
+  font-size: 14px;
 }
 
 section * {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 button {
-    outline: none;
-    border: none;
-    width: 100%;
-    float: left;
-    padding: 10px;
-    border-radius: 20px;
-    background: #dedfe2;
-    color: black;
+  outline: none;
+  border: none;
+  width: 100%;
+  float: left;
+  padding: 10px;
+  border-radius: 20px;
+  background: #dedfe2;
+  color: black;
 }
 
 button:hover {
-    background: #8c8c8c;
-    color: white;
+  background: #8c8c8c;
+  color: white;
 }
 
 button:active {
-    background: #404040;
-    color: white;
+  background: #404040;
+  color: white;
+}
+
+hr {
+  border: 0;
+  width: 100%;
+  height: 1px;
+  background: gray;
 }
 
 label {
-    display: block;
-    margin-bottom: 5px;
+  display: block;
+  margin-bottom: 5px;
 }
 
 #add_long_text_size_w, #add_long_text_size_h {
-    width: 50%;
+  width: 50%;
+}
+
+.slider {
+  width: 100%;
+}
+
+.copyright {
+  font-size: 10px;
 }

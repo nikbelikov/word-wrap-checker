@@ -2,6 +2,15 @@ document.addEventListener('DOMContentLoaded', function () {
   var addLongTextButton = document.getElementById('add_long_text');
   var addLargeImagesButton = document.getElementById('add_large_images');
   var addLongTextSlider = document.getElementById('add_long_text_count');
+  var addLongImagesWidthSlider = document.getElementById('add_long_images_size_w');
+  var addLongImagesHeightSlider = document.getElementById('add_long_images_size_h');
+
+  addLongTextSlider.addEventListener('input', function () {
+    var spanCounter = document.getElementById('add_long_text_length');
+    var value = addLongTextSlider.value;
+
+    spanCounter.innerText = value;
+  });
 
   addLongTextButton.addEventListener('click', function () {
     var length = document.getElementById('add_long_text_count').value;
@@ -9,9 +18,16 @@ document.addEventListener('DOMContentLoaded', function () {
     addLongText(length);
   });
 
-  addLongTextSlider.addEventListener('input', function () {
-    var spanCounter = document.getElementById('add_long_text_length');
-    var value = addLongTextSlider.value;
+  addLongImagesWidthSlider.addEventListener('input', function () {
+    var spanCounter = document.getElementById('add_long_images_width_value');
+    var value = addLongImagesWidthSlider.value;
+
+    spanCounter.innerText = value;
+  });
+
+  addLongImagesHeightSlider.addEventListener('input', function () {
+    var spanCounter = document.getElementById('add_long_images_heigth_value');
+    var value = addLongImagesHeightSlider.value;
 
     spanCounter.innerText = value;
   });
