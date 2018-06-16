@@ -1,54 +1,47 @@
 document.addEventListener('DOMContentLoaded', function () {
-  var addLongTextButton = document.getElementById('add_long_text');
-  var addLargeImagesButton = document.getElementById('add_large_images');
-  var addLongTextSlider = document.getElementById('add_long_text_count');
-  var addLongImagesWidthSlider = document.getElementById('add_long_images_size_w');
-  var addLongImagesHeightSlider = document.getElementById('add_long_images_size_h');
+  const addTextButton = document.getElementById('add_text');
+  const addImagesButton = document.getElementById('add_images');
+  const textLengthSlider = document.getElementById('text_length_slider');
+  const imagesWidthSlider = document.getElementById('images_width_slider');
+  const imagesHeightSlider = document.getElementById('images_height_slider');
 
-  addLongTextSlider.addEventListener('input', function () {
-    var spanCounter = document.getElementById('add_long_text_length');
-    var value = addLongTextSlider.value;
-
-    spanCounter.innerText = value;
+  textLengthSlider.addEventListener('input', function () {
+    const spanCounter = document.getElementById('add_text_length');
+    spanCounter.innerText = textLengthSlider.value;
   });
 
-  addLongTextButton.addEventListener('click', function () {
-    var length = document.getElementById('add_long_text_count').value;
-
+  addTextButton.addEventListener('click', function () {
+    const length = document.getElementById('text_length_slider').value;
     addLongText(length);
   });
 
-  addLongImagesWidthSlider.addEventListener('input', function () {
-    var spanCounter = document.getElementById('add_long_images_width_value');
-    var value = addLongImagesWidthSlider.value;
-
-    spanCounter.innerText = value;
+  imagesWidthSlider.addEventListener('input', function () {
+    const spanCounter = document.getElementById('images_width');
+    spanCounter.innerText = imagesWidthSlider.value;
   });
 
-  addLongImagesHeightSlider.addEventListener('input', function () {
-    var spanCounter = document.getElementById('add_long_images_heigth_value');
-    var value = addLongImagesHeightSlider.value;
-
-    spanCounter.innerText = value;
+  imagesHeightSlider.addEventListener('input', function () {
+    let spanCounter = document.getElementById('images_heigth');
+    spanCounter.innerText = imagesHeightSlider.value;
   });
 
-  addLargeImagesButton.addEventListener('click', function () {
-    var width = document.getElementById('add_long_images_size_w').value;
-    var height = document.getElementById('add_long_images_size_h').value;
+  addImagesButton.addEventListener('click', function () {
+    const width = document.getElementById('images_width_slider').value;
+    const height = document.getElementById('images_height_slider').value;
 
     addLargeImages(width, height);
   });
 });
 
 function addLongText(n) {
-  var text = '';
+  let text = '';
 
-  for (var i = 0; i < n / 100 + 1; i++) {
+  for (let i = 0; i < n / 100 + 1; i++) {
     text = text + 'The longest non-technical word in major dictionaries is floccinaucinihilipilification at 29 letters.';
   }
   text = text.substr(0, n);
 
-  var code = "" +
+  const code = "" +
     "javascript:" +
     "var a,w=document.createTreeWalker(document,NodeFilter.SHOW_TEXT);" +
     "while(a=w.nextNode()) {" +
@@ -69,7 +62,7 @@ function addLongText(n) {
 }
 
 function addLargeImages(w, h) {
-  var code = "" +
+  const code = "" +
     "javascript:" +
     "var img=document.getElementsByTagName('img');" +
     "for(var i=0; i<img.length;i++) {" +

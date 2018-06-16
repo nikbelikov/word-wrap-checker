@@ -3,10 +3,6 @@ html {
   text-align: center;
 }
 
-h1 {
-  font-size: 14px;
-}
-
 section * {
   margin-bottom: 10px;
 }
@@ -42,10 +38,6 @@ hr {
 label {
   display: block;
   margin-bottom: 5px;
-}
-
-#add_long_text_size_w, #add_long_text_size_h {
-  width: 50%;
 }
 
 .slider {
