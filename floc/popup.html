@@ -10,13 +10,19 @@
     <h2>Тексты</h2>
     <label for="text_length_slider">Количество символов: <span id="add_text_length">100</span></label>
     <input id="text_length_slider" class="slider" type="range" min="1" max="1000" value="100"/>
-    <button id="add_text">Проверить</button>
+    <button id="add_text" class="submit">Проверить</button>
+
     <h2>Изображения</h2>
     <label for="images_width_slider">Ширина: <span id="images_width">1024</span></label>
     <input id="images_width_slider" class="slider" type="range" min="1024" max="2500" value="1024"/>
     <label for="images_height_slider">Высота: <span id="images_heigth">768</span></label>
     <input id="images_height_slider" class="slider" type="range" min="768" max="2500" value="768"/>
-    <button id="add_images">Проверить</button>
+    <button id="set1024" class="switch">1024 x 768</button>
+    <button id="set1600" class="switch">1600 x 1200</button>
+    <button id="set1920" class="switch">1920 x 1080</button>
+    <button id="set2000" class="switch">2000 x 2000</button>
+    <button id="add_images" class="submit">Проверить</button>
+
     <span class="copyright">&copy; Floc Extension <a href="https://github.com/nikbelikov/floc" target="_blank">GitHub</a></span>
 </section>
 <script src="main.js"></script>

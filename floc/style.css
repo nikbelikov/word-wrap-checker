@@ -22,7 +22,7 @@ a:hover {
   text-decoration: none;
 }
 
-button {
+button.submit {
   outline: none;
   width: 100%;
   padding: 10px;
@@ -34,7 +34,7 @@ button {
   transition: color .3s;
 }
 
-button:after {
+button.submit:after {
   content: '';
   display: block;
   width: 0;
@@ -47,14 +47,30 @@ button:after {
   transition: width .3s;
 }
 
-button:hover {
+button.submit:hover {
   color: #19b8ff;
 }
 
-button:hover:after {
+button.submit:hover:after {
   width: 100%;
   left: 0;
   transform: translate(0);
+}
+
+button.switch {
+  outline: none;
+  background: none;
+  border: 1px solid #818c9d;
+  border-radius: 10px;
+  color: #818c9d;
+  transition: background 0.1s, color 0.1s;
+  cursor: pointer;
+  font-size: 10px;
+}
+
+button.switch:hover {
+  background: #818c9d;
+  color: white;
 }
 
 label {
@@ -77,6 +93,7 @@ input[type=range] {
 input[type=range]::-webkit-slider-runnable-track {
   background: #818c9d;
   border-radius: 10px;
+  outline: none;
 }
 
 input[type=range]::-webkit-slider-thumb {
