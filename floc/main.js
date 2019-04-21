@@ -68,6 +68,10 @@ document.addEventListener('DOMContentLoaded', function () {
   const set1600 = getElement('set1600');
   const set1920 = getElement('set1920');
   const set2000 = getElement('set2000');
+  const textTab = getElement('text_tab');
+  const imageTab = getElement('image_tab');
+  const textSection = getElement('text_section');
+  const imageSection = getElement('image_section');
 
   textLengthSlider.addEventListener('input', () => {
     const spanCounter = getElement('add_text_length');
@@ -111,4 +115,14 @@ document.addEventListener('DOMContentLoaded', function () {
   set2000.addEventListener('click', () => {
     setImageSize(2000, 2000);
   });
+
+  textTab.addEventListener('click', () => {
+    textSection.classList.add('visible');
+    imageSection.classList.remove('visible');
+  });
+
+  imageTab.addEventListener('click', () => {
+    textSection.classList.remove('visible');
+    imageSection.classList.add('visible');
+  })
 });

@@ -22,6 +22,35 @@ a:hover {
   text-decoration: none;
 }
 
+.tab_wrapper {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.radio {
+  display: none;
+}
+
+.tab_label {
+  font-size: 16px;
+  color: #47535d;
+  cursor: pointer;
+}
+
+.radio:checked + .tab_label {
+  font-weight: bold;
+}
+
+.tab_content {
+  display: none;
+}
+
+.tab_content.visible {
+  display: block;
+}
+
 button.submit {
   outline: none;
   width: 100%;
