@@ -3,14 +3,17 @@
 <head>
     <meta charset="utf-8">
     <title>Floc</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/buttons.css">
+    <link rel="stylesheet" href="css/sliders.css">
+    <link rel="stylesheet" href="css/tabs.css">
 </head>
 <body>
 <section>
     <div class="tab_wrapper">
-        <input id="text_tab" class="radio" type="radio" checked name="tabs" />
+        <input id="text_tab" class="tab_radio" type="radio" checked name="tabs" />
         <label for="text_tab" class="tab_label">Тексты</label>
-        <input id="image_tab" class="radio" type="radio" name="tabs"/>
+        <input id="image_tab" class="tab_radio" type="radio" name="tabs"/>
         <label for="image_tab" class="tab_label">Изображения</label>
     </div>
 
@@ -25,15 +28,19 @@
         <input id="images_width_slider" class="slider" type="range" min="1024" max="2500" value="1024"/>
         <label for="images_height_slider">Высота: <span id="images_heigth">768</span></label>
         <input id="images_height_slider" class="slider" type="range" min="768" max="2500" value="768"/>
-        <button id="set1024" class="switch">1024 x 768</button>
-        <button id="set1600" class="switch">1600 x 1200</button>
-        <button id="set1920" class="switch">1920 x 1080</button>
-        <button id="set2000" class="switch">2000 x 2000</button>
+        <div class="image_size_presets">
+            <button id="set1024" class="preset">1024 x 768</button>
+            <button id="set1600" class="preset">1600 x 1200</button>
+            <button id="set1920" class="preset">1920 x 1080</button>
+            <button id="set2000" class="preset">2000 x 2000</button>
+        </div>
         <button id="add_images" class="submit">Проверить</button>
     </section>
 
     <span class="copyright">&copy; Floc Extension <a href="https://github.com/nikbelikov/floc" target="_blank">GitHub</a></span>
 </section>
-<script src="main.js"></script>
+
+<script src="js/main.js"></script>
+
 </body>
 </html>

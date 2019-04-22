@@ -1,0 +1,29 @@
+.tab_wrapper {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.tab_radio {
+  display: none;
+}
+
+.tab_label {
+  font-size: 16px;
+  color: #17a2e0;
+  cursor: pointer;
+}
+
+.tab_radio:checked + .tab_label {
+  font-weight: bold;
+  color: #47535d;
+}
+
+.tab_content {
+  display: none;
+}
+
+.tab_content.visible {
+  display: block;
+}

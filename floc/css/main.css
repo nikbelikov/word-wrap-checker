@@ -1,0 +1,32 @@
+html {
+  width: 200px;
+  text-align: center;
+  padding: 10px;
+  color: #818c9d;
+}
+
+section * {
+  margin-bottom: 10px;
+}
+
+h2 {
+  font-size: 18px;
+  color: #47535d;
+}
+
+a {
+  color: #17a2e0;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.copyright {
+  font-size: 10px;
+}

@@ -1,0 +1,19 @@
+.slider {
+  width: 100%;
+}
+
+input[type=range] {
+  outline: none;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+  background: #818c9d;
+  border-radius: 10px;
+  outline: none;
+}
+
+input[type=range]::-webkit-slider-thumb {
+  background: white;
+  -webkit-appearance: none;
+  outline: none;
+}
