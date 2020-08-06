@@ -2,33 +2,39 @@
 
 ![floc-logo](https://github.com/nikbelikov/floc/blob/master/floc/icon.png)
 
-Это расширение для [Google Chrome](https://www.google.ru/chrome/index.html) поможет протестировать верстку на наличие дефектов, связанных с длинными словами, фразами и большими изображениями. 
+[This extension](https://www.google.ru/chrome/index.html) will help you test layouts and see defects associated with long words, phrases and large images.
 
-За основую взят код из [статьи на Хабрахабре](http://habrahabr.ru/company/2gis/blog/246831/) от 2ГИС.
+## How to use?
 
-## Как пользоваться?
+1. [Install](http://goo.gl/3xt6MV) this extension.
+2. Open a website.
+3. Press the button of the extension.
+4. Set the parameters and hit "Check" button.
 
-1. [Установите](http://goo.gl/3xt6MV) это расширение.
-2. Откройте сайт, который вы хотели бы проверить.
-3. Нажмите на кнопку расширения.
-4. В окне выставьте необходимые настройки и нажмите на кнопку "Проверить".
+Just refresh a page to reset all chenges.
 
-Чтобы сбросить действие плагина, просто обновите страницу браузера.
-
-## Благодарности
+## Acknowledgments
 
 - Daniil [@Daniel217D](https://github.com/Daniel217D)
 
-## Контакты
+## License
 
-Если у вас имеются какие-либо вопросы или пожелания, пишите письма на [nikbelikov@me.com](mailto:nikbelikov@me.com).
+Copyright (c) 2015-2020 [nikbelikov@me.com](mailto:nikbelikov@me.com).
 
-## Лицензия
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
 
-Copyright (c) 2015-2019 [nikbelikov.com](http://nikbelikov.com/)
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
 
-Данная лицензия разрешает лицам, получившим копию данного программного обеспечения и сопутствующей документации (в дальнейшем именуемыми «Программное Обеспечение»), безвозмездно использовать Программное Обеспечение без ограничений, включая неограниченное право на использование, копирование, изменение, добавление, публикацию, распространение, сублицензирование и/или продажу копий Программного Обеспечения, также как и лицам, которым предоставляется данное Программное Обеспечение, при соблюдении следующих условий:
-
-Указанное выше уведомление об авторском праве и данные условия должны быть включены во все копии или значимые части данного Программного Обеспечения.
-
-ДАННОЕ ПРОГРАММНОЕ ОБЕСПЕЧЕНИЕ ПРЕДОСТАВЛЯЕТСЯ «КАК ЕСТЬ», БЕЗ КАКИХ-ЛИБО ГАРАНТИЙ, ЯВНО ВЫРАЖЕННЫХ ИЛИ ПОДРАЗУМЕВАЕМЫХ, ВКЛЮЧАЯ, НО НЕ ОГРАНИЧИВАЯСЬ ГАРАНТИЯМИ ТОВАРНОЙ ПРИГОДНОСТИ, СООТВЕТСТВИЯ ПО ЕГО КОНКРЕТНОМУ НАЗНАЧЕНИЮ И ОТСУТСТВИЯ НАРУШЕНИЙ ПРАВ. НИ В КАКОМ СЛУЧАЕ АВТОРЫ ИЛИ ПРАВООБЛАДАТЕЛИ НЕ НЕСУТ ОТВЕТСТВЕННОСТИ ПО ИСКАМ О ВОЗМЕЩЕНИИ УЩЕРБА, УБЫТКОВ ИЛИ ДРУГИХ ТРЕБОВАНИЙ ПО ДЕЙСТВУЮЩИМ КОНТРАКТАМ, ДЕЛИКТАМ ИЛИ ИНОМУ, ВОЗНИКШИМ ИЗ, ИМЕЮЩИМ ПРИЧИНОЙ ИЛИ СВЯЗАННЫМ С ПРОГРАММНЫМ ОБЕСПЕЧЕНИЕМ ИЛИ ИСПОЛЬЗОВАНИЕМ ПРОГРАММНОГО ОБЕСПЕЧЕНИЯ ИЛИ ИНЫМИ ДЕЙСТВИЯМИ С ПРОГРАММНЫМ ОБЕСПЕЧЕНИЕМ.
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
