@@ -2,10 +2,7 @@
   "name": "Floc",
   "description": "This extension will help you test layouts and see defects associated with long words, phrases and large images.",
   "version": "1.3.6",
-  "permissions": [
-    "http://*/*",
-    "https://*/*"
-  ],
+  "permissions": ["activeTab"],
   "browser_action": {
     "default_title": "Floccinaucinihilipilificatiate!",
     "default_icon": "icon.png",
