@@ -3,7 +3,6 @@
   "description": "This extension will help you test layouts and see defects associated with long words, phrases and large images.",
   "version": "1.3.2",
   "permissions": [
-    "tabs",
     "http://*/*",
     "https://*/*"
   ],
