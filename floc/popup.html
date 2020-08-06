@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="utf-8">
     <title>Floc</title>
@@ -12,21 +12,21 @@
 <section>
     <div class="tab_wrapper">
         <input id="text_tab" class="tab_radio" type="radio" checked name="tabs" />
-        <label for="text_tab" class="tab_label">Тексты</label>
+        <label for="text_tab" class="tab_label">Texts</label>
         <input id="image_tab" class="tab_radio" type="radio" name="tabs"/>
-        <label for="image_tab" class="tab_label">Изображения</label>
+        <label for="image_tab" class="tab_label">Images</label>
     </div>
 
     <section id="text_section" class="tab_content visible">
-        <label for="text_length_slider">Количество символов: <span id="add_text_length">100</span></label>
+        <label for="text_length_slider">Symbols: <span id="add_text_length">100</span></label>
         <input id="text_length_slider" class="slider" type="range" min="1" max="1000" value="100"/>
-        <button id="add_text" class="submit">Проверить</button>
+        <button id="add_text" class="submit">Check</button>
     </section>
 
     <section id="image_section" class="tab_content">
-        <label for="images_width_slider">Ширина: <span id="images_width">1024</span></label>
+        <label for="images_width_slider">Width: <span id="images_width">1024</span></label>
         <input id="images_width_slider" class="slider" type="range" min="1024" max="2500" value="1024"/>
-        <label for="images_height_slider">Высота: <span id="images_heigth">768</span></label>
+        <label for="images_height_slider">Height: <span id="images_heigth">768</span></label>
         <input id="images_height_slider" class="slider" type="range" min="768" max="2500" value="768"/>
         <div class="image_size_presets">
             <button id="set1024" class="preset">1024 x 768</button>
@@ -34,7 +34,7 @@
             <button id="set1920" class="preset">1920 x 1080</button>
             <button id="set2000" class="preset">2000 x 2000</button>
         </div>
-        <button id="add_images" class="submit">Проверить</button>
+        <button id="add_images" class="submit">Check</button>
     </section>
 
     <span class="copyright">&copy; Floc Extension <a href="https://github.com/nikbelikov/floc" target="_blank">GitHub</a></span>

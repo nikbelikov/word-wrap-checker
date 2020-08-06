@@ -4,7 +4,7 @@ button.submit {
   padding: 10px;
   font-size: 14px;
   border: 0;
-  color: #17a2e0;
+  color: #2d77f6;
   cursor: pointer;
   position: relative;
   transition: color .3s;
@@ -19,12 +19,12 @@ button.submit:after {
   bottom: 0;
   left: 50%;
   transform: translateX(-50%);
-  background: #19b8ff;
+  background: #2d77f6;
   transition: width .3s;
 }
 
 button.submit:hover {
-  color: #19b8ff;
+  color: #2d77f6;
 }
 
 button.submit:hover:after {
