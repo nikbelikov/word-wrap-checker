@@ -11,7 +11,7 @@
 3. Press the button of the extension.
 4. Set the parameters and hit "Check" button.
 
-Just refresh a page to reset all chenges.
+Just refresh a page to reset all changes.
 
 ## Acknowledgments
 
