@@ -1,6 +1,6 @@
-# Floc
+# Word Wrap Checker Extension
 
-![floc-logo](https://github.com/nikbelikov/floc/blob/master/floc/icon.png)
+![extension-logo](https://github.com/nikbelikov/word-wrap-checker/blob/master/floc/icon.png)
 
 [This extension](https://www.google.ru/chrome/index.html) will help you test layouts and see defects associated with long words, phrases and large images.
 
@@ -19,7 +19,7 @@ Just refresh a page to reset all changes.
 
 ## License
 
-Copyright (c) 2015-2020 [nikbelikov@me.com](mailto:nikbelikov@me.com).
+Copyright (c) 2015-2021 [nikbelikov@me.com](mailto:nikbelikov@me.com).
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
