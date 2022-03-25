@@ -2,7 +2,7 @@
 
 ![extension-logo](https://github.com/nikbelikov/word-wrap-checker/blob/master/chrome/icon.png)
 
-[This extension](https://www.google.ru/chrome/index.html) will help you test layouts and see defects associated with long words, phrases and large images.
+[This extension](http://goo.gl/3xt6MV) will help you test layouts and see defects associated with long words, phrases and large images.
 
 ## How to use?
 
