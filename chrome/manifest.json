@@ -1,17 +1,17 @@
 {
+  "manifest_version": 3,
   "name": "Word Wrap Checker",
-  "description": "This extension will help you test layouts and see defects associated with long words, phrases and large images.",
-  "version": "2.0.0",
-  "permissions": ["activeTab"],
-  "browser_action": {
-    "default_title": "Word Wrap Checker",
-    "default_icon": "icon.png",
-    "default_popup": "popup.html"
-  },
+  "version": "2.1.0",
+  "description": "This extension will help you in testing html-blocks, and you will see defects associated with long words, phrases and large images.",
+  "permissions": ["activeTab", "scripting"],
   "icons": {
     "16": "icon.png",
     "48": "icon.png",
     "128": "icon.png"
   },
-  "manifest_version": 2
+  "action": {
+    "default_title": "Word Wrap Checker",
+    "default_icon": "icon.png",
+    "default_popup": "popup.html"
+  }
 }

@@ -2,16 +2,17 @@
 
 ![extension-logo](https://github.com/nikbelikov/word-wrap-checker/blob/master/chrome/icon.png)
 
-[This extension](http://goo.gl/3xt6MV) will help you test layouts and see defects associated with long words, phrases and large images.
+[This extension](http://goo.gl/3xt6MV) will help you in testing html-blocks, and you will see defects associated with long words, phrases and large images.
 
 ## How to use?
 
-1. [Install](http://goo.gl/3xt6MV) this extension.
-2. Open a website.
-3. Press the button of the extension.
-4. Set the parameters and hit "Check" button.
+1. Open Google Chrome.
+2. Install [Word Wrap Checker](http://goo.gl/3xt6MV).
+3. Open any website.
+4. Press the button of the extension.
+5. Set the parameters and hit "Check" button.
 
-Just refresh a page to reset all changes.
+Refresh a page to reset all changes.
 
 ## Acknowledgments
 
