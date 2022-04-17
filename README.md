@@ -1,6 +1,6 @@
 # Word Wrap Checker Extension
 
-![extension-logo](https://github.com/nikbelikov/word-wrap-checker/blob/master/chrome/icon.png)
+<img src="https://github.com/nikbelikov/word-wrap-checker/blob/master/chrome/icon.png" alt="logo" width="64"/>
 
 [This extension](http://goo.gl/3xt6MV) will help you in testing html-blocks, and you will see defects associated with long words, phrases and large images.
 
