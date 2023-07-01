@@ -4,48 +4,32 @@ button.submit {
   padding: 10px;
   font-size: 14px;
   border: 0;
-  color: #2d77f6;
+  color: #707070;
   cursor: pointer;
   position: relative;
-  transition: color .3s;
-}
-
-button.submit:after {
-  content: '';
-  display: block;
-  width: 0;
-  height: 2px;
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  background: #2d77f6;
-  transition: width .3s;
+  background-color: #efefef;
+  border-radius: 30px;
 }
 
 button.submit:hover {
-  color: #2d77f6;
-}
-
-button.submit:hover:after {
-  width: 100%;
-  left: 0;
-  transform: translate(0);
+  background-color: #707070;
+  color: white;
 }
 
 button.preset {
   outline: none;
-  background: none;
-  border: 1px solid #818c9d;
-  border-radius: 10px;
-  color: #818c9d;
+  background: #f6f6f6;
+  border: 0;
+  padding: 6px 10px;
+  border-radius: 20px;
+  color: #707070;
   transition: background 0.1s, color 0.1s;
   cursor: pointer;
   font-size: 10px;
 }
 
 button.preset:hover {
-  background: #818c9d;
+  background: #707070;
   color: white;
 }
 

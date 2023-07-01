@@ -22,22 +22,33 @@ const _rattleImages = (width, height) => {
 }
 
 const _rattleText = (text) => {
-  let a, w = document.createTreeWalker(document, NodeFilter.SHOW_TEXT);
+  const shuffleArray = (array) => {
+    const shuffledArray = [...array];
+    for (let i = shuffledArray.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [shuffledArray[i], shuffledArray[j]] = [shuffledArray[j], shuffledArray[i]];
+    }
+    return shuffledArray;
+  };
 
-  while (a = w.nextNode()) {
-    if (a.parentElement.tagName !== 'STYLE' && a.textContent.trim().length) {
-      a.textContent = text;
+  const treeWalker = document.createTreeWalker(document, NodeFilter.SHOW_TEXT);
+
+  while (treeWalker.nextNode()) {
+    const node = treeWalker.currentNode;
+
+    if (node.parentElement.tagName !== 'STYLE' && node.textContent.trim().length) {
+      const words = text.split(' ');
+      const randomizedWords = shuffleArray(words);
+      node.textContent = randomizedWords.join(' ');
     }
   }
 
-  w = document.getElementsByTagName('input');
+  const inputElements = document.querySelectorAll('input[type="text"], input[type="submit"]');
 
-  for (let i = 0; i < w.length; i++) {
-    if (w[i].type === 'text' || w[i].type === 'submit') {
-      w[i].value = text;
-    }
-  }
-}
+  inputElements.forEach((input) => {
+    input.value = text;
+  });
+};
 
 const addLargeImages = async (width, height) => {
   let [tab] = await chrome.tabs.query({active: true, currentWindow: true});
@@ -45,15 +56,11 @@ const addLargeImages = async (width, height) => {
   window.close();
 };
 
-const addLongText = async length => {
-  let text = '';
+const addLongText = async (length) => {
+  const baseText = 'The longest non-technical word in major dictionaries is floccinaucinihilipilification at 29 letters';
+  const text = baseText.repeat(Math.ceil(length / baseText.length)).substr(0, length - 1);
 
-  for (let i = 0; i < length / 100 + 1; i++) {
-    text = text + 'The longest non-technical word in major dictionaries is floccinaucinihilipilification at 29 letters.';
-  }
-  text = text.substr(0, length);
-
-  let [tab] = await chrome.tabs.query({active: true, currentWindow: true});
+  const [tab] = await chrome.tabs.query({active: true, currentWindow: true});
   _runScript(tab.id, _rattleText, [text]);
   window.close();
 };

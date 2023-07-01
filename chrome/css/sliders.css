@@ -2,15 +2,8 @@
   width: 100%;
 }
 
-input[type=range] {
-  outline: none;
-}
-
 input[type=range]::-webkit-slider-runnable-track {
   border-radius: 10px;
   outline: none;
-}
-
-input[type=range]::-webkit-slider-thumb {
-  outline: none;
+  background-color: #f6f6f6;
 }
