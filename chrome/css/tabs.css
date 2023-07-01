@@ -2,7 +2,7 @@
   display: flex;
   width: 100%;
   justify-content: space-between;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
 .tab_radio {
@@ -11,14 +11,15 @@
 
 .tab_label {
   font-size: 16px;
-  color: #2d77f6;
+  color: #707070;
   cursor: pointer;
+  padding: 4px 10px;
+  border-radius: 20px;
 }
 
 .tab_radio:checked + .tab_label {
-  color: #47535d;
-  text-decoration: underline;
   cursor: default;
+  box-shadow: 0 0 0 2px #f6f6f6;
 }
 
 .tab_content {

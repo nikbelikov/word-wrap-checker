@@ -18,12 +18,14 @@
     </div>
 
     <section id="text_section" class="tab_content visible">
+        <img class="content_image" src="img/text.png" width="60" alt="image icon">
         <label for="text_length_slider">Symbols: <span id="add_text_length">100</span></label>
-        <input id="text_length_slider" class="slider" type="range" min="1" max="1000" value="100"/>
+        <input id="text_length_slider" class="slider" type="range" min="1" max="500" value="100"/>
         <button id="add_text" class="submit">Check</button>
     </section>
 
     <section id="image_section" class="tab_content">
+        <img class="content_image" src="img/image.png" width="60" alt="image icon">
         <label for="images_width_slider">Width: <span id="images_width">1024</span></label>
         <input id="images_width_slider" class="slider" type="range" min="1024" max="2500" value="1024"/>
         <label for="images_height_slider">Height: <span id="images_height">768</span></label>
@@ -37,7 +39,7 @@
         <button id="add_images" class="submit">Check</button>
     </section>
 
-    <span class="copyright">&copy; "Word Wrap Checker" for Chrome <a href="https://github.com/nikbelikov/floc" target="_blank">GitHub</a></span>
+    <span class="copyright"><strong>"Word Wrap Checker"</strong> for Chrome <a href="https://github.com/nikbelikov/word-wrap-checker" target="_blank">GitHub</a></span>
 </section>
 
 <script src="js/main.js"></script>

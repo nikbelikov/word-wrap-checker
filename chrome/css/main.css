@@ -1,8 +1,9 @@
 html {
+  font-family: Arial, sans-serif;
   width: 200px;
   text-align: center;
   padding: 10px;
-  color: #818c9d;
+  color: #707070;
 }
 
 section * {
@@ -29,4 +30,8 @@ label {
 
 .copyright {
   font-size: 10px;
+}
+
+.content_image {
+  margin-bottom: 20px;
 }
