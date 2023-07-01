@@ -1,6 +1,6 @@
 # Word Wrap Checker Extension
 
-<img src="https://github.com/nikbelikov/word-wrap-checker/blob/master/chrome/icon.png" alt="logo" width="64"/>
+<img src="preview.jpg" alt="logo" width="600"/>
 
 With this [extension](https://chrome.google.com/webstore/detail/word-wrap-checker/gjkiifeaanbafelffgfpdkhbcekmlcad), you can quickly test different layouts and spot issues related to long words, phrases, or big images.
 
