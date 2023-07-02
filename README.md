@@ -2,7 +2,9 @@
 
 <img src="preview.jpg" alt="logo" width="600"/>
 
-With this [extension](https://chrome.google.com/webstore/detail/word-wrap-checker/gjkiifeaanbafelffgfpdkhbcekmlcad), you can quickly test different layouts and spot issues related to long words, phrases, or big images.
+This extension can help you check HTML blocks for issues with long words, phrases, or big images.
+ 
+It's super handy for making sure everything looks great on your website!
 
 ## How to use it?
 
