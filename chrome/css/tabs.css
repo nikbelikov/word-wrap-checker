@@ -2,7 +2,7 @@
   display: flex;
   width: 100%;
   justify-content: space-between;
-  margin-bottom: 20px;
+  margin-bottom: 16px;
 }
 
 .tab_radio {
@@ -19,7 +19,7 @@
 
 .tab_radio:checked + .tab_label {
   cursor: default;
-  box-shadow: 0 0 0 2px #f6f6f6;
+  box-shadow: 0 0 0 2px #efefef;
 }
 
 .tab_content {
