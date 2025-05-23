@@ -35,3 +35,18 @@ label {
 .content_image {
   margin-bottom: 20px;
 }
+
+.no_spaces_wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 11px;
+}
+
+.no_spaces_wrapper input {
+  margin-right: 6px;
+}
+
+.no_spaces_wrapper label {
+  margin-bottom: 6px;
+}

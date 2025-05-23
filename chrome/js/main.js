@@ -3,6 +3,7 @@ const DEFAULT_SETTINGS = {
   textLength: 100,
   imageWidth: 1024,
   imageHeight: 768,
+  noSpaces: false,
 };
 
 const BASE_TEXT =
@@ -26,6 +27,7 @@ const applySettings = (settings) => {
   const imagesHeight = getElement('images_height');
   const textLengthSlider = getElement('text_length_slider');
   const addTextLength = getElement('add_text_length');
+  const noSpacesCheckbox = getElement('no_spaces');
 
   if (settings.activeTabId === 'image_tab') {
     imageTab.checked = true;
@@ -45,6 +47,7 @@ const applySettings = (settings) => {
   imagesWidth.innerText = settings.imageWidth;
   imagesHeightSlider.value = settings.imageHeight;
   imagesHeight.innerText = settings.imageHeight;
+  noSpacesCheckbox.checked = settings.noSpaces;
 };
 
 const saveSettings = () => {
@@ -53,6 +56,7 @@ const saveSettings = () => {
     textLength: parseInt(getElement('text_length_slider').value, 10),
     imageWidth: parseInt(getElement('images_width_slider').value, 10),
     imageHeight: parseInt(getElement('images_height_slider').value, 10),
+    noSpaces: getElement('no_spaces').checked,
   };
 
   chrome.storage?.local?.set({ wordWrapCheckerSettings: currentSettings });
@@ -79,7 +83,7 @@ const setPlaceholderImages = (width, height) => {
   }
 };
 
-const replaceText = (text) => {
+const replaceText = (text, noSpacesFlag) => {
   const shuffleArray = (array) => {
     const shuffledArray = [...array];
 
@@ -106,7 +110,13 @@ const replaceText = (text) => {
     ) {
       const words = text.split(' ');
       const randomizedWords = shuffleArray(words);
-      node.textContent = randomizedWords.join(' ');
+      let result = randomizedWords.join(' ');
+
+      if (noSpacesFlag) {
+        result = result.replace(/\s+|-/g, '_');
+      }
+
+      node.textContent = result;
     }
   }
 
@@ -125,13 +135,13 @@ const processImagesOnPage = async (width, height) => {
   window.close();
 };
 
-const processTextOnPage = async (length) => {
+const processTextOnPage = async (length, noSpacesFlag) => {
   const text = BASE_TEXT
     .repeat(Math.ceil(length / BASE_TEXT.length))
     .substr(0, length);
 
   const [tab] = await chrome.tabs.query({ active: true, currentWindow: true });
-  runScript(tab.id, replaceText, [text]);
+  runScript(tab.id, replaceText, [text, noSpacesFlag]);
   window.close();
 };
 
@@ -162,6 +172,7 @@ document.addEventListener('DOMContentLoaded', function () {
   const imageTab = getElement('image_tab');
   const textSection = getElement('text_section');
   const imageSection = getElement('image_section');
+  const noSpacesCheckbox = getElement('no_spaces');
 
   loadSettings(applySettings);
 
@@ -173,7 +184,12 @@ document.addEventListener('DOMContentLoaded', function () {
 
   addTextButton.addEventListener('click', () => {
     const length = getElement('text_length_slider').value;
-    processTextOnPage(length);
+    const noSpacesFlag = getElement('no_spaces').checked;
+    processTextOnPage(length, noSpacesFlag);
+  });
+
+  noSpacesCheckbox.addEventListener('change', () => {
+    saveSettings();
   });
 
   imagesWidthSlider.addEventListener('input', () => {
